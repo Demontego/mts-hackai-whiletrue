@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  backend:
+    build: ./backend
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    network_mode: "host"
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    network_mode: "host"
