@@ -8,10 +8,9 @@ https://drive.google.com/file/d/1sLpTV6706UaFTLOavrigUeGq7lAI8EFm/view?usp=shari
 
 распаковать в папку backend
 
-#TO RUN:
+##TO RUN exceute below and Frontend will be available at localhost:8060, Backend localhost:8010 :
 
 ```docker-compose build```
 
 ```docker-compose up```
 
-##Frontend: localhost:8060 Backend: 8010

@@ -43,8 +43,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# test = [{'itemid': '10', 'prob': '0.9999', 'price': 1000000}, 
-#         {'itemid': '12', 'prob': '0.5', 'price': 1123}]
+test = [{'itemid': '10', 'prob': '0.9999', 'price': 1000000}, 
+        {'itemid': '12', 'prob': '0.5', 'price': 1123}]
 
 
 

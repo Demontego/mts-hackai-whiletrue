@@ -24,6 +24,6 @@ RUN apt-get update &&\
    
 COPY requirements.txt ./requirements.txt
 RUN pip3 install -r ./requirements.txt
-COPY ./backend.py ./backend.py
+COPY ./ ./
 
 ENTRYPOINT python3 ./backend.py
