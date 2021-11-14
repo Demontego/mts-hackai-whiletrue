@@ -13,19 +13,19 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-all_data = pd.read_csv('../all_data_for_lama.csv', index_col='ID',low_memory=False)
-with open("../automl.pkl", "rb") as f:
+all_data = pd.read_csv('all_data_for_lama.csv', index_col='ID',low_memory=False)
+with open("automl.pkl", "rb") as f:
     model = pickle.load(f)
 
 purchases = np.array(list(model.reader.class_mapping.keys()))
 
-with open("../lbes.pkl", "rb") as f:
+with open("lbes.pkl", "rb") as f:
     lbes = pickle.load(f)
     
-with open("../ss.pkl", "rb") as f:
+with open("ss.pkl", "rb") as f:
     ss = pickle.load(f)
     
-ffm = torch.load('../ffm.pt', map_location='cpu')
+ffm = torch.load('ffm.pt', map_location='cpu')
 ffm.device = 'cpu'
 
 target = ['MCC_CODE']
