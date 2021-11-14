@@ -3,3 +3,6 @@ python-multipart
 uvicorn
 numpy
 pandas
+lightautoml
+scikit-learn
+deepctr-torch
